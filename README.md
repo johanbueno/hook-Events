@@ -13,10 +13,11 @@ Website that allows user to search for events in by city or keyword.
 -Materialize
 
 # ScreenShots
-<img src="./assets/images/Screen Shot 2019-12-05 at 6.45.55 PM.png" width=400px>
-<img src="assets/images/Screen Shot 2019-12-05 at 6.45.55 PM.png" width=400px>
 <img src="./assets/images/Screen Shot 2019-12-05 at 6.46.36 PM.png" width=400px>
 <img src="./assets/images/Screen Shot 2019-12-05 at 6.46.54 PM.png" width=400px>
+<img src="./assets/images/Screen Shot 2019-12-05 at 6.45.55 PM.png" width=400px>
+<img src="assets/images/Screen Shot 2019-12-05 at 6.46.04 PM.png" width=400px>
+
 
 # Use
 User can input city or keyword to get a list of upcoming events
