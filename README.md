@@ -3,8 +3,7 @@
 Website that allows user to search for events in by city or keyword. 
 
 # Link
-
-
+https://johanbueno.github.io/project_done/
 # Code
 -HTML
 <br>
