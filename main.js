@@ -290,7 +290,7 @@ function test5() {
 $(document).on("click", ".buttonID", function (event) {
     console.log("click");
     event.preventDefault();
-    location.href = "../event_details.html";
+    location.href = "./event_details.html";
     destination =$(this).attr('data-dest');
     ticketUrl = $(this).attr('data-url');
     image = $(this).attr('data-image');
