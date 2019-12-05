@@ -1,0 +1,169 @@
+button{
+    background: #80cbc4;
+    color: white;
+    padding: 10px;
+    font-size: 25px;   
+}
+.sport1{
+    float:left;
+    margin: 20px;
+    text-align: center;
+    width:280px;
+    font-size: 20px;
+}
+.sport2{
+    float:left;
+    margin: 20px;
+    text-align: center;
+    width: 280px;
+    font-size: 20px;
+}
+.sport3{
+    float:left;
+    margin: 20px;
+    text-align: center;
+    width:280px;
+    font-size: 20px;
+}
+.sport4{
+    float:left;
+    margin: 20px;
+    text-align: center;
+    width:280px;
+    font-size: 20px;
+}
+.sport5{
+    float:left;
+    margin: 20px;
+    text-align: center;
+    width:280px;
+    font-size: 20px;
+}
+.sport6{
+    float:left;
+    margin: 20px;
+    text-align: center;
+    width:280px;
+    font-size: 20px;
+}
+.concert1{
+    float:left;
+    margin: 20px;
+    text-align: center;
+    width:280px;
+    font-size: 20px;
+}
+.concert2{
+    float:left;
+    margin: 20px;
+    text-align: center;
+    width: 280px;
+    font-size: 20px;
+}
+.concert3{
+    float:left;
+    margin: 20px;
+    text-align: center;
+    width:280px;
+    font-size: 20px;
+}
+.concert4{
+    float:left;
+    margin: 20px;
+    text-align: center;
+    width:280px;
+    font-size: 20px;
+}
+.concert5{
+    float:left;
+    margin: 20px;
+    text-align: center;
+    width:280px;
+    font-size: 20px;
+}
+.concert6{
+    float:left;
+    margin: 20px;
+    text-align: center;
+    width:280px;
+    font-size: 20px;
+}
+
+#image{
+    float:left;
+    margin: 10px;
+}
+.header{
+   text-align:center;
+    height: 100px;
+    color:white;
+}
+ul{
+padding: 0 15px;
+    padding-top: 0px;
+    padding-right: 15px;
+    padding-bottom: 0px;
+    padding-left: 15px;
+    cursor: pointer;
+}
+nav .brand-logo {
+    /* position: absolute; */
+    color: #fff;
+    display: inline-block;
+    font-size: 2.1rem;
+    padding: 0;
+}
+.searchBar{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.mainmenu{
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+#listButtons {
+    padding:20px;
+    background: #80cbc4;
+    color: white;
+}
+.section{
+    padding-bottom: 50px;
+    /* float: left; */
+}
+section img{
+    height: 300px;
+    width: 400px;
+
+}
+h5{
+    /* float: left; */
+    padding-right: 10px;
+    padding-top: 50px;
+    padding-left: 10px;
+    /* width: 50%; */
+    text-align: center; 
+    
+}
+.buttonID{
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 50%;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+    
+}
+.hidden{
+    display: none;
+}
+
+#eventDetails{
+    text-align: center;
+}
+
+
+
+
+
