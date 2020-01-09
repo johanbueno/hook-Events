@@ -13,6 +13,10 @@ var finalDestination = document.querySelector("#end");
 var buyTickets = document.querySelector('#priceBtn');
 var getDirections = document.querySelector('#directions');
 var imgJ = document.querySelector('#imgDetail');
+var eventName = "";
+var eventName = document.querySelector('#event-name');
+var dateDetails = "";
+var dateOnEvent = document.querySelector('#event-date');
 
 
 
@@ -33,9 +37,10 @@ function test() {
         document.querySelector('#eventHeader').textContent = "Events in  " + city;
         for (var j = 0; j < 19; j++) {
 
-        //    console.log(response._embedded.events[j]._embedded.venues[0].name);
-            console.log(response._embedded.events[j].name);
-            console.log(response._embedded.events[j]._embedded.venues[0].generalInfo);
+            //    console.log(response._embedded.events[j]._embedded.venues[0].name);
+            // console.log(response._embedded.events[j].name);
+            // console.log(response._embedded.events[j]._embedded.venues[0].generalInfo);
+           
             var div = document.createElement('div');
             div.setAttribute('class', "divider");
             var div2 = document.createElement('div');
@@ -48,35 +53,31 @@ function test() {
             var p = document.createElement("p");
             p.textContent = moment(response._embedded.events[j].dates.start.localDate).format("MMM Do YYYY");
             p.setAttribute('id', 'eventDetails');
+            date = p.textContent;
             var button = document.createElement('button');
+            
             button.setAttribute('class', 'buttonID');
             button.setAttribute('data-dest',response._embedded.events[j]._embedded.venues[0].name);
             button.setAttribute('data-url', response._embedded.events[j].url);
             button.setAttribute('data-image',response._embedded.events[j].images[0].url);
+            button.setAttribute('data-eventName',response._embedded.events[j].name);
+            button.setAttribute('data-date',moment(response._embedded.events[j].dates.start.localDate).format("MMM Do YYYY"));
             button.textContent = "Event Details";
             var img = document.createElement("img");
             img.src = (response._embedded.events[j].images[0].url);
+            console.log(date);
             // $(button).on("click",function (event){
 
             //     window.location.href = "../envent_P.html";
 
             // });
 
-
             document.querySelector(".list").appendChild(div).parentNode.appendChild(section).appendChild(div3).appendChild(h5).parentNode.appendChild(p).parentNode.appendChild(button).parentNode.parentNode.appendChild(div2).appendChild(img)
 
-
-
-
         }
-
-
     })
 
-
-
 }
-
 
 
 // pulls pictures for start screen
@@ -276,6 +277,7 @@ function test5() {
             button.setAttribute('data-dest',response._embedded.events[j]._embedded.venues[0].name);
             button.setAttribute('data-url', response._embedded.events[j].url);
             button.setAttribute('data-image',response._embedded.events[j].images[0].url);
+            button.setAttribute('data-date',)
             button.textContent = "Event Details";
             var img = document.createElement("img");
             img.src = (response._embedded.events[j].images[0].url);
@@ -294,13 +296,21 @@ $(document).on("click", ".buttonID", function (event) {
     destination =$(this).attr('data-dest');
     ticketUrl = $(this).attr('data-url');
     image = $(this).attr('data-image');
+    eventName = $(this).attr('data-eventName');
+    dateDetails = $(this).attr('data-date');
+    
+
+
     localStorage.setItem('im',image);
     localStorage.setItem('ticketUrl',ticketUrl);
     localStorage.setItem('dest',destination);
+    localStorage.setItem('event',eventName);
+    localStorage.setItem('date',dateDetails);
    
 
     console.log(ticketUrl);
     console.log(destination);
+    console.log(eventName);
     // console.log(image);
 });
 $(document).ready(function () {
@@ -340,4 +350,23 @@ $(document).ready(function(){
         console.log(imgJ);
     }
 
+});
+$(document).ready(function(){
+    if (eventName) {
+        event.preventDefault();
+        var f = localStorage.getItem('event');
+        $(eventName).text(f);
+        console.log(eventName);
+    }
+
+});
+$(document).ready(function(){
+    if (dateOnEvent) {
+        event.preventDefault();
+        var g = localStorage.getItem('date');
+        $(dateOnEvent).text(g);
+        console.log(eventName);
+    }
+
 })
+
