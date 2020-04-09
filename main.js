@@ -40,11 +40,14 @@ function test() {
             //    console.log(response._embedded.events[j]._embedded.venues[0].name);
             // console.log(response._embedded.events[j].name);
             // console.log(response._embedded.events[j]._embedded.venues[0].generalInfo);
+            console.log(response._embedded.events[j].sales.presales[0].startDateTime)
            
             var div = document.createElement('div');
             div.setAttribute('class', "divider");
             var div2 = document.createElement('div');
             var div3 = document.createElement('div');
+            var preSales = document.createElement('div');
+            preSales.textContent= moment( response._embedded.events[j].sales.presales[0].startDateTime).format("YYYY MMM Do");
             div3.setAttribute('class', "col m6")
             var section = document.createElement('section');
             section.setAttribute('class', 'section');
@@ -72,7 +75,7 @@ function test() {
 
             // });
 
-            document.querySelector(".list").appendChild(div).parentNode.appendChild(section).appendChild(div3).appendChild(h5).parentNode.appendChild(p).parentNode.appendChild(button).parentNode.parentNode.appendChild(div2).appendChild(img)
+            document.querySelector(".list").appendChild(div).parentNode.appendChild(section).appendChild(div3).appendChild(h5).parentNode.appendChild(p).parentNode.appendChild(button).parentNode.parentNode.appendChild(div2).appendChild(img).appendChild(preSales)
 
         }
     })
